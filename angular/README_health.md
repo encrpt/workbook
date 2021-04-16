@@ -53,6 +53,7 @@
 - complete typed
 - services
 - pipes
+- rxjs (unsubscribe, *map instead nested subscribes anti-pattern)
 - environment
 - implemeted tests, run tests, executeable
 - scss / css
