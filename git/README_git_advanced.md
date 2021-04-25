@@ -48,9 +48,14 @@ git rm __path/to/file__
 git commit --no-verify
 
 # git status
-# both added (merge confics after pull)
+## both added: (merge confics after pull)
 git checkout --ours __filename__
-# or
+### or
 git checkout --theirs __filename__
+
+## added by us: - use theirs
+git merge --abort
+# remove files, add, commit, pull again
+
 
 ```
