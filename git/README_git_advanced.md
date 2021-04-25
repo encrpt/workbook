@@ -46,4 +46,11 @@ git rm __path/to/file__
 
 # commmit
 git commit --no-verify
+
+# git status
+# both added
+git checkout --ours __filename__
+# or
+git checkout --theirs __filename__
+
 ```
