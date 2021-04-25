@@ -48,7 +48,7 @@ git rm __path/to/file__
 git commit --no-verify
 
 # git status
-# both added
+# both added (merge confics after pull)
 git checkout --ours __filename__
 # or
 git checkout --theirs __filename__
