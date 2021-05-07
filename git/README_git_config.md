@@ -10,6 +10,10 @@ git config --list
 git config --list --system
 git config --list --global
 git config --list --local
+
+# support longlonglong filenames
+git config --system core.longpaths true
+
 ```
 
 ### or on Windows
