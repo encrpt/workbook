@@ -24,6 +24,56 @@ git clean
 git checkout feature/<branch_name>
 ```
 
+## merge
+- small teams, short-lived topic branches
+
+```bash
+# get merge target
+git checkout __meger_target__
+
+# retrieve the latest meta-data info
+git fetch
+# retrieve the latest meta-data info AND those changes from the remote repository
+git pull
+
+# fast-forward or 3-way
+git merge
+
+# force a merge-commit
+git merge --no-ff
+
+# merge the master branch into the feature branch
+git checkout feature
+git merge master
+# or:
+git merge feature master
+```
+
+## rebase
+- integrate upstream changes into your local
+- create fast-forward merge
+
+```bash
+# on feature-branch, option to remove commits, squash ...
+
+git rebase origin/master
+# or option to remove commits, squash ...
+# git rebase -i origin/master
+
+# conflicts
+git add . # or git 'rm' __file_name__ to remove
+git rebase --continue
+# or stop rebase: git rebase --abort
+
+# To get it all back into sync, we need to do a force push
+git push --force
+
+# rebase the master branch into the feature branch
+git checkout feature
+git rebase master
+
+```
+
 ## Housekeeping
 
 ```bash

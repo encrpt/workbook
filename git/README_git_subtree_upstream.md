@@ -13,6 +13,8 @@ md $SRC_DIR_NAME
 # add remote repository and configure subtree
 git remote add  $SUBTREE_REMOTE_NAME $SUBTREE_REMOTE_URL
 git subtree add --prefix=$SRC_DIR_NAME $SUBTREE_REMOTE_NAME $SUBTREE_REPO_BRANCHNAME
+# use –squash to not store the entire history of the subproject
+
 
 # pull
 git subtree pull --prefix=$SRC_DIR_NAME $SUBTREE_REMOTE_NAME $SUBTREE_REPO_BRANCHNAME
