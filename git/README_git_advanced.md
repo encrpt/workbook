@@ -58,4 +58,11 @@ git merge --abort
 # remove files, add, commit, pull again
 
 
+## pull - changed, but same name on remote - tags
+### list
+git ls-remote --tags origin
+### fetch
+git fetch --tags -f
+
+
 ```
